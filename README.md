@@ -7,7 +7,7 @@ Este é um jogo de damas desenvolvido usando Vite, React e TypeScript.
 1. **Clone este repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/nosycolg/checkers-game.git
 
 2. Navegue até o diretório do projeto:
     ```bash
