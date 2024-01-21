@@ -1,30 +1,42 @@
-# React + TypeScript + Vite
+# Jogo de Damas em Vite + React TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um jogo de damas desenvolvido usando Vite, React e TypeScript.
 
-Currently, two official plugins are available:
+## Como iniciar o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Clone este repositório:**
 
-## Expanding the ESLint configuration
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd checkers-game
 
-- Configure the top-level `parserOptions` property like this:
+3. Instale as dependências do projeto:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+    ```bash
+    npm install
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+4. Inicie o aplicativo:
+
+    ```bash
+    npm run dev
+
+O aplicativo estará disponível em http://localhost:3000 no seu navegador.
+
+### Captura de Peças
+
+- Se uma peça adversária estiver uma casa diagonal à frente de uma peça do jogador atual e houver uma casa vazia imediatamente atrás da peça adversária, o jogador pode capturar a peça adversária.
+- Para capturar uma peça adversária, clique na casa vazia imediatamente atrás da peça adversária.
+
+### Contagem de Peças Capturadas
+
+- O número de peças capturadas por cada jogador é exibido na parte inferior do tabuleiro.
+- "White Pieces Captured" mostra o número de peças brancas capturadas por jogadores pretos.
+- "Black Pieces Captured" mostra o número de peças pretas capturadas por jogadores brancos.
+
+### Alternância de Jogadores
+
+- O jogo alterna entre jogadores após cada movimento bem-sucedido.
+- O jogador atual é exibido na parte inferior do tabuleiro.
